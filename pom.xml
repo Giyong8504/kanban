@@ -4,6 +4,6 @@
   <groupId>org.koreait</groupId>
   <artifactId>kanban</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <name>Archetype - kanban</name>
+  <name>Archetype - kanban1</name>
   <url>http://maven.apache.org</url>
 </project>
