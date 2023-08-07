@@ -1,6 +1,4 @@
-package models.work;
-
-import java.time.LocalDateTime;
+package models.works;
 
 public enum Status {
     READY,
