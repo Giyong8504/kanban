@@ -14,3 +14,4 @@ public class Work {
         private LocalDateTime regDt;
         private LocalDateTime modDt;
 }
+
