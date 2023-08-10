@@ -20,7 +20,7 @@ public class MemberURLRouter implements URLRouter {
 
         if (mode.equals("join")) { // 회원가입
             controller = new JoinController();
-        } else if (mode.equals("login")) { //로그인
+        } else if (mode.equals("login")) { //로그인 
             controller = new LoginController();
         } else if (mode.equals("info")) { // 회원정보 확인
             controller = new InfoController();

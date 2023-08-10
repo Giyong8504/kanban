@@ -48,8 +48,8 @@ public class WorkDao {
     }
 
     /**
-     * 개별 조회
-     *
+     * 개별 조회 
+     * 
      * @param workNo
      * @return
      */
@@ -76,5 +76,14 @@ public class WorkDao {
         List<Work> items = sqlSession.selectList("WorkListMapper.list", work);
 
         return items;
+    }
+
+    public boolean exists(long workNo) {
+        SqlSession sqlSession = DBConnection.getSession();
+        Work params = new Work();
+        params.setWorkNo(workNo);
+        int cnt = sqlSession.selectOne("WorkListMapper.exists", params);
+
+        return cnt > 0;
     }
 }

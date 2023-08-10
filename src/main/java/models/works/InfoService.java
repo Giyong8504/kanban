@@ -22,15 +22,18 @@ public class InfoService {
 
         List<Work> items = workDao.gets(work);
         if (items == null) return null;
+
         Map<Status, List<Work>> data = items.stream().collect(Collectors.groupingBy(Work::getStatus));
 
         return data;
     }
+
     /** 작업 준비중 목록 */
     public List<Work> getListReady() {
         return getList(Status.READY);
     }
-    /** 작업 진행준 목록 */
+
+    /** 작업 진행중 목록 */
     public List<Work> getListProgress() {
         return getList(Status.PROGRESS);
     }
@@ -38,11 +41,10 @@ public class InfoService {
     /** 작업 완료 목록 */
     public List<Work> getListDone() {
         return getList(Status.DONE);
-
     }
 
     /** 작업 보류 목록 */
-    public List<Work> getLsitPostPone() {
+    public List<Work> getListPostPone() {
         return getList(Status.POSTPONE);
     }
 

@@ -29,7 +29,7 @@ public class MemberController extends HttpServlet {
     public void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         router.route(req, resp, "member");
 
-    }
+     }
 
     @Override
     public void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
