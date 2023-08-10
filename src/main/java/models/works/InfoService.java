@@ -11,13 +11,13 @@ public class InfoService {
         this.workDao = workDao;
     }
 
+
     public Work get(long workNo) {
 
         Work work = workDao.get(workNo);
 
         return work;
     }
-
     public Map<Status, List<Work>> getList(Work work) {
 
         List<Work> items = workDao.gets(work);
@@ -57,3 +57,4 @@ public class InfoService {
         return items == null ? null : items.get(status);
     }
 }
+

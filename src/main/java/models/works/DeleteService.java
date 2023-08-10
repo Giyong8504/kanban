@@ -7,6 +7,7 @@ public class DeleteService {
         this.workDao = workDao;
     }
 
+
     public void delete(long workNo) {
 
         if (!workDao.exists(workNo)) {
@@ -18,3 +19,4 @@ public class DeleteService {
         }
     }
 }
+
