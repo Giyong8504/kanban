@@ -23,7 +23,7 @@ public class UsersDao {
         UserForm params = new UserForm();
         params.setUserId(userId);
 
-        Users users = sqlSession.selectOne("UsersMapper.info", params);
+        Users users = sqlSession.selectOne("UserMapper.info", params);
 
         return users;
     }
