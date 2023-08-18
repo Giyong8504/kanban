@@ -8,6 +8,7 @@ import jakarta.servlet.http.HttpSession;
 import java.io.IOException;
 
 public class LogoutController implements Controller {
+
     @Override
     public void get(HttpServletRequest req, HttpServletResponse resp) {
         HttpSession session = req.getSession();
