@@ -19,7 +19,7 @@
         - 회원가입 - /member/join
         - 로그인 - /member/login + /(메인)
         - 정보수정 - /member/info
-      - 작업관리 컨트롤러
+      - 작업관리 컨트롤러ggg
         - 작업목록 - /works
         - 작업등록 - /works/add
         - 작업조회 - /works/작업번호
